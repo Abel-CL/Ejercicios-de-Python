@@ -3,11 +3,11 @@ Escribe una función que determine si una palabra ingresada es un palíndromo (s
 """
 
 # Definir la función que verifica si una palabra es un palíndromo
-def palindromo(palabra):
+def palindromo(texto):
     # Remover espacios y convertir la palabra a minúsculas
-    palabra = palabra.replace(" ", "").lower()
+    texto = texto.replace(" ", "").lower()
     # Comparar la palabra con su reverso
-    return palabra == palabra[::-1]
+    return texto == texto[::-1]
 
 # Bucle para solicitar palabras al usuario
 while True:
